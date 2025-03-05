@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 8/3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: red;">Nhập đúng mã để có bất ngờ nha cô ❤️</h1>
+        <input type="number" id="codeInput" placeholder="Nhập mã 4 số" maxlength="4">
+        <button id="verifyBtn">Xác nhận</button>
+        <p id="errorMessage"></p>
+
+        <h1 id="greeting" style="display: none;">
+            Cô giáo kính yêu! <br>
+
+            Hôm nay sân trường rực rỡ,<br>
+            
+            Những cành hoa khoe sắc,<br>
+            
+            Những nụ cười nở trên môi.<br>
+            
+            Cô đã dành cả tuổi xuân<br>
+            
+            Để dạy dỗ, để yêu thương<br>
+            
+            Để từng thế hệ học trò<br>
+            
+            Lớn lên với bao khát vọng.<br>
+            
+            Nhân ngày 8 tháng 3,<br>
+            
+            Chúng em chúc cô thật vui,<br>
+            
+            Mãi trẻ trung, mãi dịu dàng<br>
+            
+            Như những bông hoa rực rỡ!</h1>
+        <a href="index.html">Quay lại</a>
+    </div>
+
+    <script>
+        document.getElementById("verifyBtn").addEventListener("click", function () {
+            const inputCode = document.getElementById("codeInput").value;
+            if (inputCode === "4829") {
+                document.getElementById("greeting").style.display = "block";
+                document.getElementById("codeInput").style.display = "none";
+                document.getElementById("verifyBtn").style.display = "none";
+                document.getElementById("errorMessage").innerText = "";
+            } else {
+                document.getElementById("errorMessage").innerText = "Mã code không đúng, vui lòng thử lại!";
+            }
+        });
+    </script>
+</body>
+</html>
