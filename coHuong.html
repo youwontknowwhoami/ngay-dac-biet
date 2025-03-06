@@ -37,6 +37,7 @@
             Mãi trẻ trung, mãi dịu dàng<br>
             
             Như những bông hoa rực rỡ!</h1>
+            <h2 id="chuc" style="display: none;">Chúc Cô Hương 8/3 vui vẻ❤️</h2>
         <a href="index.html">Quay lại</a>
     </div>
 
@@ -45,6 +46,7 @@
             const inputCode = document.getElementById("codeInput").value;
             if (inputCode === "4829") {
                 document.getElementById("greeting").style.display = "block";
+                document.getElementById("chuc").style.display = "block";
                 document.getElementById("codeInput").style.display = "none";
                 document.getElementById("verifyBtn").style.display = "none";
                 document.getElementById("errorMessage").innerText = "";

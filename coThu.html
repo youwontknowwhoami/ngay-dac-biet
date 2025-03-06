@@ -12,39 +12,31 @@
         <input type="number" id="codeInput" placeholder="Nhập mã 4 số" maxlength="4">
         <button id="verifyBtn">Xác nhận</button>
         <p id="errorMessage"></p>
+            
+                    <h1 id="greeting" style="display: none;">
+                        Hôm nay ngày tám tháng ba
 
-        <h1 id="greeting" style="display: none;">
-            Cô ơi! <br>
+Chúc cô trẻ mãi không già <br>
 
-            Mỗi sáng đến lớp,<br>
-            
-            Cô là người đầu tiên<br>
-            
-            Đón chúng em bằng nụ cười hiền.<br>
-            
-            Cô dạy những bài học<br>
-            
-            Không chỉ là con chữ<br>
-            
-            Mà còn là yêu thương,<br>
-            
-            Là ước mơ, là hy vọng.<br>
-            
-            Hôm nay, ngày 8 tháng 3<br>
-            
-            Chúng em chẳng có gì nhiều<br>
-            
-            Chỉ muốn nói một lời<br>
-            
-            Cảm ơn cô – người mẹ thứ hai!</h1>
-        <a href="index.html">Quay lại</a>
-        <h2 id="chuc" style="display: none;">Chúc Cô Lệ 8/3 vui vẻ❤️</h2>
+Sức khỏe thăng hoa cùng niềm vui nhỏ<br>
+
+Tặng cô đóa hoa đẹp nhất<br>
+
+Với cả hương nồng sắc xuân<br>
+
+Nhớ ơn dạy dỗ ân cần<br>
+
+Trồng cây dựng lớp lớn khôn từng ngày.<br>
+
+                    </h1>
+                    <h2 id="chuc" style="display: none;">Chúc Má Thư 8/3 vui vẻ❤️</h2>
+                    <a href="index.html">Quay lại</a>
     </div>
 
     <script>
         document.getElementById("verifyBtn").addEventListener("click", function () {
             const inputCode = document.getElementById("codeInput").value;
-            if (inputCode === "1024") {
+            if (inputCode === "5936") {
                 document.getElementById("greeting").style.display = "block";
                 document.getElementById("chuc").style.display = "block";
                 document.getElementById("codeInput").style.display = "none";
